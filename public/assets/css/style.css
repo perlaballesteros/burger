@@ -1,0 +1,21 @@
+body{
+    background-image: url(../img/grass.jpg);
+}
+#container{
+    background-image: url(../img/picnic.jpg);
+    width:70%;
+    height:70%;
+    margin:auto;
+    
+}
+
+#newBurgerscontainer,#devouredBurgerscontainer{
+    width:45%;
+}
+#newBurgerscontainer{
+    float:left;
+}
+
+#devouredBurgerscontainer{
+    float:right;
+}

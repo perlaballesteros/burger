@@ -1,46 +1,48 @@
 
+
 <h1 id="mainHeding">Vegan Burgers!</h1>
-
-<!--DISPLAY NOT DEVOURED-->
-<div id="newBurgerscontainer">
-    <h2 id="newBurgersheading">Burgers to Try!</h2>
-    
-    <ul id="newBurgerslist">
-        {{#each burgers}}
-        <!--if falsy-->
-        {{#unless devoured}}
-        <li>
-            {{burger_name}}
-            <button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">Devour</button>
-        </li>
-        {{/unless}}
-        {{/each}}
-    </ul>
-</div>
-
-<!--DISPLAY DEVOURED-->
-<div id="devouredBurgerscontainer">
-    <h2 id="devouredBurgersheading">Burgers that I Have Tried!</h2>
-    <ul id="devouredBurgerslist">
-        {{#each burgers}}
-        <!--if truthy-->
-        {{#if devoured}}
-        <li>
-            {{burger_name}}
-        </li>
-        {{/if}}
-        {{/each}}
-    </ul>
-</div>
-
-
-<!--ADD NEW BURGER-->
-<div id="addNewburgerContainer">
+<div id="container">
+    <!--ADD NEW BURGER-->
     <h2>ADD A BURGER!</h2>
-    <form class="create-form">
-        <label for="bu">Burger Name:</label>
-        <input type="text" id="bu" name="burger_name">
+    <div id="addNewburgerContainer">
+        <form class="create-form">
+            <label for="bu">Burger Name:</label>
+            <input type="text" id="bu" name="burger_name">
 
-        <button type="submit">Add Burger</button>
-    </form>
+            <button type="submit">Add Burger</button>
+        </form>
+    </div>
+
+    <!--DISPLAY NOT DEVOURED-->
+    <div id="newBurgerscontainer">
+        <h2 id="newBurgersheading">Burgers to Try!</h2>
+        <ul id="newBurgerslist">
+            {{#each burgers}}
+            <!--if falsy-->
+            {{#unless devoured}}
+            <li>
+                {{burger_name}}
+                <button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">Devour</button>
+            </li>
+            {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <!--DISPLAY DEVOURED-->
+    <div id="devouredBurgerscontainer">
+        <h2 id="devouredBurgersheading">Burgers Devoured!</h2>
+        <ul id="devouredBurgerslist">
+            {{#each burgers}}
+            <!--if truthy-->
+            {{#if devoured}}
+            <li>
+                {{burger_name}}
+            </li>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
 </div>
+
+    
