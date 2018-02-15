@@ -28,14 +28,8 @@ var orm={
             cb(res);
         });
     },
-    updateOne: function(table, objColvals, condition, cb) {
-        var queryString = "UPDATE " + table+" SET "+objToSql(objColvals)+" WHERE "+condition;
-        
-        /*queryString += " SET ";
-        queryString += objToSql(objColvals);
-        queryString += " WHERE ";
-        queryString += condition;
-        console.log(queryString);*/
+    updateOne: function(table, updateToval, condition, cb) {
+        var queryString = "UPDATE "+table+" SET devoured="+updateToval+" WHERE "+condition;
         connection.query(queryString, function(err, result) {
           if (err) {
             throw err;

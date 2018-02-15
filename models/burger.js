@@ -14,8 +14,8 @@ var burger={
         });
     },
     
-    updateOne:function(objColvals, condition, cb){
-        orm.upddateOne("burgers",objColvals,condition,function(res){
+    updateOne:function(updateToval, condition, cb){
+        orm.updateOne("burgers",updateToval,condition,function(res){
             cb(res);
         });
     }
