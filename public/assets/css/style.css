@@ -1,21 +1,80 @@
 body{
-    background-image: url(../img/grass.jpg);
-}
-#container{
     background-image: url(../img/picnic.jpg);
-    width:70%;
-    height:70%;
+    color:#254c3c;
+    font-family: 'Roboto Slab', serif;
+    font-size:15px;
+    display:inline-block;
+}
+h1{
+    font-size:70px;
+    font-family: 'Pacifico', cursive;
+    margin-top:35px;
+    margin-bottom:25px;
+    margin-left:30%;
+}
+h2{
+    margin:5px 0px 10px 5px;
+    font-size:35px;
+    font-family:'Lobster', cursive;
+}
+#col2, #col3{
+    margin:0px;
+    padding:0px;
+    background-image: url(../img/grass.jpg);
+    color:#fff;
+    border: #ffff double 10px;
+}
+#col2{
+    margin-right: 5px;
+    margin-left:5px;
+}
+#col3{
+    margin-left: 5px;
+}
+li{
+    margin-bottom:3px;
+}
+#add{
+    margin-top:10px;
+    background-image: url(../img/grass.jpg);
+    border: #ffff double 10px;
+    color:#fff;
+    margin-left:5px;
+}
+#addHeading{
+    color:#fff;
+    text-align:center;
+}
+#label{
+    color:#fff;
+    font-size: 20px;
+}
+button{
+    border-radius: 3px;
+    margin-bottom:5px;
+    background-image: url(../img/roses.jpg);
+}
+button:hover{
+    color:#254c3c;
+}
+#friends{
+    margin-top:0px;
+    background-image: url(../img/roses.jpg);
+    border: #ffff double 10px;
+    margin-right:5px;
+    margin-left:5px;
+}
+#friendsimg{
+    width:160px;
+    height:160px;
     margin:auto;
-    
+    padding:0px
 }
-
-#newBurgerscontainer,#devouredBurgerscontainer{
-    width:45%;
-}
-#newBurgerscontainer{
+#sunflower{
+    margin-top:20px;
+    margin-left:20%;
+    margin-bottom: 5px;
+    width:100px;
+    height: 100px;
     float:left;
-}
-
-#devouredBurgerscontainer{
-    float:right;
 }
