@@ -78,3 +78,20 @@ button:hover{
     height: 100px;
     float:left;
 }
+#cover{
+    width:100%;
+    height:30px;
+
+
+}
+footer{
+   
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:20px;
+    background-color:#e29298;
+    color: white;
+    text-align: center;
+}
