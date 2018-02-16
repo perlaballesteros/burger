@@ -2,6 +2,8 @@
 ## By Perla E. Ballesteros
 
 ![Demo gif](./public/assets/img/demogif.gif)
+
+
 [Demo Version](https://protected-lake-39232.herokuapp.com/)
 
 **Description:**
